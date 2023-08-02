@@ -1,9 +1,7 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
-import gspread #import all of gspread
-from google.oauth2.service_account import Credentials  #import Credentials class
-from pprint import pprint
+#import all of gspread
+import gspread 
+#import Credentials class
+from google.oauth2.service_account import Credentials 
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -39,7 +37,7 @@ def get_sales_data():
         print("Data should be six numbers.")
         print("Example: 10,20,30,40,50,60\n")
 
-        data_str = input("Enter your data here: ") 
+        data_str = input("Enter your data here:\n")
 
         sales_data = data_str.split(",")
 
